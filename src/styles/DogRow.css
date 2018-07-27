@@ -1,0 +1,8 @@
+.dog-row > * {
+    display: block; 
+    margin: 0 auto;
+}
+
+.dog-row > span {
+    text-transform: uppercase;
+}
