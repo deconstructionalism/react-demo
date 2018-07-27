@@ -1,11 +1,11 @@
 // any React component JS file requires these imports*
 import React, { Component } from 'react';
 
-import Header from './Header';
-import Body from './Body';
+import Header from '../components/Header';
+import Body from '../components/Body';
 
 // style and image imports
-import './App.css';
+import '../styles/App.css';
 
 // all Components start with a class of ComponentName extending the 
 // base React Component class

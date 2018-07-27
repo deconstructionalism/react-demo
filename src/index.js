@@ -6,10 +6,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // global css styles
-import './index.css';
+import './styles/index.css';
 
 // a React Component!!!!!
-import App from './App';
+import App from './containers/App';
 
 // where ReactDOM inserts the Virtual DOM container component <App /> into the
 // actual DOM element <div id="root" />
