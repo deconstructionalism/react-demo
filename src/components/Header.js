@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
-import logo from '../images/logo.svg';
+import React from 'react'
+import logo from '../images/dog-head.png'
 
-class Header extends Component {
-    render() {
-      return (
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">{this.props.headerTitle}</h1>
-        </header>
-      )
-    }
+import '../styles/Header.css'
+
+const Header = props => {
+  return (
+    <header>
+      <img src={logo} className="logo" alt="logo" />
+      <h1>{props.headerTitle}</h1>
+    </header>
+  )
 }
 
 export default Header

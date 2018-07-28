@@ -2,13 +2,24 @@ import React, { Component } from 'react'
 
 import '../styles/DogRow.css'
 
-export default class DogRow extends Component {
+class DogRow extends Component {
     render() {
     return (
       <div className="dog-row">
-            <span>{this.props.breed}</span>
-            <img src={this.props.imgSrc} />   
+        <span>
+            {this.props.breed}
+            <a title={`search for ${this.props.breed}s on Wikipedia`}
+                className="search-wiki"
+                target="_blank"
+                href={`https://en.wikipedia.org/wiki/api.php%20?action=opensearch%20&search=${this.props.breed}`}>
+              <i className="fas fa-search"></i>
+            </a>
+        </span>
+        <img src={this.props.url}
+              alt={this.props.breed}/>
       </div>
     )
   }
 }
+
+export default DogRow

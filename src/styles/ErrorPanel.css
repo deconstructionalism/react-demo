@@ -1,0 +1,9 @@
+span {
+    width: 100%;
+    background-color: #ff1744;
+    margin: 0;
+    padding: 10px;
+    color: white;
+    font-style: italic;
+    font-size: 14   px;
+}

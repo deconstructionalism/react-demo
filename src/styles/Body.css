@@ -1,0 +1,7 @@
+div.contents > * {
+    margin-bottom: 30px;
+}
+
+div.contents > p.intro {
+    font-size: large;
+}

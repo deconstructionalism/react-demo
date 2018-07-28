@@ -1,25 +1,31 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import DogRow from './DogRow'
+import GetDogsForm from './GetDogsForm'
 
-class Body extends Component {
-    render() {
-      const DogRows = this.props.dogInfo.map((dog, i) => {
-        return (<DogRow key={i}
-                breed={dog.breed}
-                imgSrc={dog.imgSrc}
-          />)
-      })
+import '../styles/Body.css'
 
-      return (
-        <div>
-          <p className="App-intro">
-            {this.props.bodyText}
-          </p>
-          {DogRows}
-        </div>
-      )
-    }
-  }
+const Body = props => {
+  const DogRows = props.dogInfo.map((dog, i) => {
+    return (<DogRow key={i}
+            breed={dog.breed}
+            url={dog.url}
+      />)
+    })
+
+  return (
+    <div className="contents">
+      <p className="intro">
+        {props.bodyText}
+      </p>
+      <GetDogsForm numDogs={props.numDogs}
+                   setNumDogs={props.setNumDogs}
+                   getDogs={props.getDogs}
+                   getDogsError={props.getDogsError}/>
+      {DogRows}
+    </div>
+  )
+  
+}
 
 export default Body

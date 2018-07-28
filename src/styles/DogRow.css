@@ -1,8 +1,37 @@
+.dog-row {
+    border: 1px solid rgba(0,0,0,.03);
+    box-shadow: 0 2px 2px rgba(0,0,0,.24), 0 0 2px rgba(0,0,0,.12);
+    margin: 0 auto;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .dog-row > * {
     display: block; 
     margin: 0 auto;
 }
 
 .dog-row > span {
-    text-transform: uppercase;
+    padding: 4px;
+    width: 100%;
+    color: rgba(0,0,0,.54);
+    background: rgba(0,0,0,.05);
+    text-transform: capitalize;
+}
+
+.dog-row > img {
+    width: 100%;
+    padding: 10px;
+}
+
+a, a:focus, a:visited {
+    transition: color 0.1s linear;
+    color: rgba(0,0,0,.54);
+    float: right;
+}
+
+a:hover {
+    color: #ff9e22
 }

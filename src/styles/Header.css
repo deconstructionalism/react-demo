@@ -1,0 +1,24 @@
+img.logo {
+    animation: logo-spin infinite 0.5s ease-in-out alternate;
+    height: 80px;
+}
+
+header {
+    background-color: #ff9e22;
+    height: 180px;
+    padding: 20px;
+    color: white;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(-5deg) scale(1.1);
+    }
+    to {
+        transform: rotate(5deg) scale(1);
+    }
+}
